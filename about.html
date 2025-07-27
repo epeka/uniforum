@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNIFORUM - About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #3eb4e8, #f8d6e4);
+      color: #222;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #2a9fd6;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #1e7ac6;
+    }
+
+    .donate-button-nav {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #0066cc;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2a9fd6;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    .donate-button-footer {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      cursor: pointer;
+      border: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .donate-button-footer:hover {
+      background-color: #e67e00;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>UNIFORUM</h1>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sat.html">SAT</a>
+      <a href="ielts.html">IELTS</a>
+      <a href="nuet.html">NUET</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="https://www.buymeacoffee.com/uniforum" class="donate-button-nav">Donate</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About UNIFORUM</h1>
+    <p>UNIFORUM is a non-profit online community dedicated to helping students worldwide prepare for important exams such as SAT, IELTS, and NUET. Our mission is to provide free and accessible resources, expert advice, and a supportive environment for students to excel.</p>
+    <p>Founded by passionate educators and students, UNIFORUM fosters collaboration and peer support. We believe that education should be accessible to everyone, regardless of their background or location.</p>
+    <p>We continuously update our platform with high-quality study materials, forums for discussion, and helpful guides to ensure every learner has the tools they need for success.</p>
+    <p>If you want to support our cause and help us keep these resources free, please consider making a donation. Your generosity allows us to maintain and expand our services for future students.</p>
+  </main>
+
+  <footer class="footer">
+    <p>UNIFORUM is a non-profit organization. Your donations help keep our resources free and accessible to students worldwide.</p>
+    <button class="donate-button-footer" onclick="window.location.href='https://www.buymeacoffee.com/uniforum'">Donate Now</button>
+  </footer>
+</body>
+</html>

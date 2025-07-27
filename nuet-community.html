@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNIFORUM - NUET Community Q&A</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #3eb4e8, #f8d6e4);
+      color: #222;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #2a9fd6;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #1e7ac6;
+    }
+
+    .donate-button-nav {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .forum-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #0066cc;
+      margin-bottom: 2rem;
+    }
+
+    .content-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .content-box h3 {
+      color: #0066cc;
+      margin-bottom: 1rem;
+    }
+
+    .content-box ul {
+      padding-left: 1.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2a9fd6;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    .donate-button-footer {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      cursor: pointer;
+      border: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .donate-button-footer:hover {
+      background-color: #e67e00;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>UNIFORUM</h1>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sat.html">SAT</a>
+      <a href="ielts.html">IELTS</a>
+      <a href="nuet.html">NUET</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="https://www.buymeacoffee.com/uniforum" class="donate-button-nav">Donate</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h2 class="forum-title">💬 NUET Community Q&amp;A</h2>
+    <div class="content-box">
+      <h3>Ask, Answer, Collaborate!</h3>
+      <ul>
+        <li>Have a question about NUET prep? Post it here and get answers from fellow students!</li>
+        <li>Share your personal prep strategies and help others learn.</li>
+        <li>Discuss doubts, tricky questions, and recent exam experiences.</li>
+        <li>Be respectful and supportive — we grow together as a learning community.</li>
+        <li>Visit often to see new posts, replies, and tips shared by learners like you.</li>
+      </ul>
+      <p>💡 Got insights? Drop your answers, uplift someone’s prep journey, and make UNIFORUM stronger!</p>
+    </div>
+  </main>
+  <div style="text-align: center; margin-top: 2rem;">
+  <a href="https://discord.gg/2qw5rAJx" target="_blank" class="ask-forum-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord Icon" width="20" style="vertical-align: middle; margin-right: 8px;">
+    Join the Discussion on Discord
+  </a>
+</div>
+
+<style>
+  .ask-forum-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #5865F2; /* Discord color */
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+  }
+
+  .ask-forum-btn:hover {
+    background-color: #404EED;
+  }
+</style>
+
+
+  <footer class="footer">
+    <p>UNIFORUM is a non-profit organization. Your donations help keep our resources free and accessible to students worldwide.</p>
+    <button class="donate-button-footer" onclick="window.location.href='https://www.buymeacoffee.com/uniforum'">Donate Now</button>
+  </footer>
+</body>
+</html>

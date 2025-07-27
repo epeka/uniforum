@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNIFORUM - SAT & IELTS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom, #3eb4e8, #f8d6e4);
+      color: #222;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #2a9fd6;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .navbar h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .nav-links a:hover {
+      background-color: #1e7ac6;
+    }
+    .donate-button-nav {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+    }
+    main.section {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      max-width: 700px;
+      width: 100%;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .card:nth-child(2) { animation-delay: 0.3s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+    .card:nth-child(4) { animation-delay: 0.9s; }
+    .card:nth-child(5) { animation-delay: 1.2s; }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card-header img {
+      width: 80px;
+      height: 80px;
+      animation: bounce 1s infinite alternate ease-in-out;
+      object-fit: contain;
+    }
+    .card-header h2 {
+      font-size: 2rem;
+      color: #0066cc;
+      text-align: center;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      text-align: center;
+    }
+    .card p strong {
+      color: #000;
+    }
+    .forum-button {
+      margin-top: 1rem;
+      align-self: center;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .forum-button:hover {
+      transform: scale(1.05);
+    }
+    .sat-button { background-color: #0685d0; color: white; }
+    .ielts-button { background-color: #da2b42; color: white; }
+    .nuet-button { background-color: #9c27b0; color: white; }
+    .resources-button { background-color: #009688; color: white; }
+    .about-button { background-color: #607d8b; color: white; }
+    .donate-button { background-color: #ff9800; color: white; margin-top: 0.5rem; }
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2a9fd6;
+      color: white;
+      margin-top: 3rem;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+    @media (max-width: 768px) {
+      .card { padding: 1rem; }
+      .card-header { flex-direction: column; }
+      .card-header h2 { font-size: 1.5rem; }
+      .card p { font-size: 0.95rem; }
+      .forum-button { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>UNIFORUM</h1>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sat.html">SAT</a>
+      <a href="ielts.html">IELTS</a>
+      <a href="nuet.html">NUET</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="https://www.buymeacoffee.com/uniforum" class="donate-button-nav">Donate</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="card" id="sat">
+      <div class="card-header">
+        <img src="https://img.icons8.com/fluency/96/test-passed.png" alt="SAT Icon" />
+        <h2>SAT Forum</h2>
+      </div>
+      <p>Join the discussion on SAT preparation. Share tips, ask questions, and connect with fellow students working on the Reading, Writing, and Math sections.</p>
+      <button class="forum-button sat-button" onclick="location.href='sat.html'">Go to SAT Forum</button>
+    </div>
+
+    <div class="card" id="ielts">
+      <div class="card-header">
+        <img src="https://img.icons8.com/fluency/96/microphone.png" alt="IELTS Icon" />
+        <h2>IELTS Forum</h2>
+      </div>
+      <p>Access expert advice and peer support for IELTS exam sections, including Task 1, Task 2, Listening, and Speaking.</p>
+      <button class="forum-button ielts-button" onclick="location.href='ielts.html'">Go to IELTS Forum</button>
+    </div>
+
+    <div class="card" id="nuet">
+      <div class="card-header">
+        <img src="https://img.icons8.com/fluency/96/school.png" alt="NUET Icon" />
+        <h2>NUET Forum</h2>
+      </div>
+      <p>Discuss Nazarbayev University Entrance Test strategies, resources, and share your experiences with the NUET community.</p>
+      <button class="forum-button nuet-button" onclick="location.href='nuet.html'">Go to NUET Forum</button>
+    </div>
+
+    <div class="card" id="resources">
+      <div class="card-header">
+        <img src="https://img.icons8.com/fluency/96/open-book--v1.png" alt="Resources Icon" />
+        <h2>Resources</h2>
+      </div>
+      <p>Find free downloadable materials, video tutorials, and curated links to help you study effectively.</p>
+      <button class="forum-button resources-button" onclick="location.href='resources.html'">Explore Resources</button>
+    </div>
+
+    <div class="card" id="about">
+      <div class="card-header">
+        <img src="https://img.icons8.com/fluency/96/info--v1.png" alt="About Icon" />
+        <h2>About Us</h2>
+      </div>
+      <p>Learn about UNIFORUM’s mission, values, and how you can support our non-profit community.</p>
+      <button class="forum-button about-button" onclick="location.href='about.html'">Learn More</button>
+    </div>
+
+    <div class="card" id="donate">
+      <div class="card-header">
+        <img src="https://img.icons8.com/fluency/96/heart-with-arrow.png" alt="Donate Icon" />
+        <h2>Support UNIFORUM</h2>
+      </div>
+      <p>UNIFORUM is a non-profit organization dedicated to helping students prepare for exams. Please consider making a donation to keep our resources free.</p>
+      <button class="forum-button donate-button" onclick="window.location.href='https://www.buymeacoffee.com/uniforum'">Donate Now</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>UNIFORUM is a non-profit organization. Your donations help keep our resources free and accessible to students worldwide.</p>
+    <button class="forum-button donate-button" onclick="window.location.href='https://www.buymeacoffee.com/uniforum'">Donate</button>
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      card.style.animationPlayState = 'paused';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>

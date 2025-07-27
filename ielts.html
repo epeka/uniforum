@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNIFORUM - IELTS Forum</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #3eb4e8, #f8d6e4);
+      color: #222;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #2a9fd6;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #1e7ac6;
+    }
+
+    .donate-button-nav {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .forum-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #0066cc;
+      margin-bottom: 2rem;
+    }
+
+    .topic-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .topic-item {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      font-weight: bold;
+    }
+
+    .topic-item:hover {
+      transform: scale(1.02);
+    }
+
+    .topic-item a {
+      color: #0066cc;
+      text-decoration: none;
+      display: block;
+    }
+
+    .topic-item a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2a9fd6;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    .donate-button-footer {
+      background-color: #ff9800;
+      color: white;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      cursor: pointer;
+      border: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .donate-button-footer:hover {
+      background-color: #e67e00;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>UNIFORUM</h1>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sat.html">SAT</a>
+      <a href="ielts.html">IELTS</a>
+      <a href="nuet.html">NUET</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="https://www.buymeacoffee.com/uniforum" class="donate-button-nav">Donate</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h2 class="forum-title">IELTS Forum</h2>
+    <div class="topic-list">
+  <div class="topic-item">
+    <a href="ielts-writing-task-1.html">📝 Writing Task 1<br/>
+      <small>Learn how to describe visual data in bar charts, maps, and diagrams. Includes examples and scoring tips.</small>
+    </a>
+  </div>
+  <div class="topic-item">
+    <a href="ielts-writing-task-2.html">📝 Writing Task 2<br/>
+      <small>Master essays for all question types: opinion, discussion, problem-solution, and more.</small>
+    </a>
+  </div>
+  <div class="topic-item">
+    <a href="ielts-listening-practice.html">🎧 Listening Practice<br/>
+      <small>Practice all 4 parts with audio scripts, question strategies, and common traps.</small>
+    </a>
+  </div>
+  <div class="topic-item">
+    <a href="ielts-speaking-tips.html">🗣 Speaking Tips<br/>
+      <small>Get high-band strategies for Parts 1, 2, and 3 with sample answers and fluency techniques.</small>
+    </a>
+  </div>
+  <div class="topic-item">
+    <a href="ielts-grammar-vocabulary.html">📚 Grammar & Vocabulary<br/>
+      <small>Build academic vocabulary and grammar for Writing and Speaking success.</small>
+    </a>
+  </div>
+  <div class="topic-item">
+    <a href="ielts-community.html">💬 Ask the Community<br/>
+      <small>Post questions, share answers, and get feedback from fellow test takers and tutors.</small>
+    </a>
+  </div>
+</div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>UNIFORUM is a non-profit organization. Your donations help keep our resources free and accessible to students worldwide.</p>
+    <button class="donate-button-footer" onclick="window.location.href='https://www.buymeacoffee.com/uniforum'">Donate Now</button>
+  </footer>
+</body>
+</html>
